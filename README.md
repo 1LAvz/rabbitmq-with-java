@@ -11,9 +11,18 @@
 
 ### Folder structure in the project
 #### package 'example1'
+> **"Hello World!"**  
 > It contains two classes: Recv and Send.  
 > - **Send** is responsible for connecting to a queue or create one if it does not exist yet. It sends a message and then close the connections.   
-> - **Recv** connect and listen to the queue, this service continues running unless explicit stopped.
+> - **Recv** connect and listen to the queue, this service continues running unless explicit stopped.   
+> - https://www.rabbitmq.com/tutorials/tutorial-one-java
+
+#### package 'example2'
+> **Work Queues**   
+> It contains two classes: NewTask and Worker.
+> - **NewTask** add tasks to the queue.
+> - **Worker** consume tasks from the queue. You can start multiple works to handle messages(taks) more quickly.   
+> - https://www.rabbitmq.com/tutorials/tutorial-two-java
 
 
 ---
