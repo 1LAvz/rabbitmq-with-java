@@ -5,7 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.DeliverCallback;
 
-public class ReceiveLogs {
+public class ReceiveLogsPrintConsole {
 
     private static final String EXCHANGE_NAME = "logs";
 
