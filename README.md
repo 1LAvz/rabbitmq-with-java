@@ -24,6 +24,13 @@
 > - **Worker** consume tasks from the queue. You can start multiple works to handle messages(taks) more quickly.   
 > - https://www.rabbitmq.com/tutorials/tutorial-two-java
 
+#### package 'example3'
+> **Publish/Subscribe**   
+> It contains two classes: EmitLog and ReceiveLogs.
+> - **EmitLog** send logs to the exchange.
+> - **ReceiveLogs** Any queues that are attached to a specific exchange will receive the log from the producer.
+> - https://www.rabbitmq.com/tutorials/tutorial-three-java
+
 
 ---
 --
