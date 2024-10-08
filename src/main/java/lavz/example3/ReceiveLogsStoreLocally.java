@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ReceiveLogsStoreLocally {
 
     private static final String EXCHANGE_NAME = "logs";
-    private static final String FILE_PATH = "/home/avanzi/Downloads/logfile.txt";
+    private static final String FILE_PATH = "src/main/resources/logfile.txt";
 
 
     public static void main(String[] argv) throws Exception {
