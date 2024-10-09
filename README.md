@@ -26,10 +26,22 @@
 
 #### package 'example3'
 > **Publish/Subscribe**   
-> It contains two classes: EmitLog and ReceiveLogs.
+> It contains three classes: EmitLog, ReceiveLogsPrintConsole, ReceiveLogsStoreLocally. The exchange type used is funout, which delivers messages to all queues bound to the exchange.
 > - **EmitLog** send logs to the exchange.
-> - **ReceiveLogs** Any queues that are attached to a specific exchange will receive the log from the producer.
+> - **ReceiveLogsPrintConsole** This consumer is attached to a queue which is bound to a specific exchange. It writes log to the console when a message is delivered.
+> - **ReceiveLogsStoreLocally** It writes log to a file in the disk when a message is delivered.
 > - https://www.rabbitmq.com/tutorials/tutorial-three-java
+
+
+ #### package 'example4'
+> **Publish/Subscribe with direct exchange**   
+> It contains three classes: EmitLogDirect, ReceiveLogsDirectToConsole and ReceiveLogsDirectToLocalFile. The exchange type used is direct,
+> which delivers messages to all queues bound to the exchange and has a matching ROUTING KEY. So the producer must inform a routing key, and the queues can declare their
+> interest in hearing out for message by declaring the same routing key.
+> - **EmitLogDirect** send logs to the exchange.
+> - **ReceiveLogsDirectToConsole** Any queues that are attached to a specific exchange will receive the log from the producer.
+> - **ReceiveLogsDirectToLocalFile** Any queues that are attached to a specific exchange will receive the log from the producer.
+> - https://www.rabbitmq.com/tutorials/tutorial-four-java
 
 
 ---
